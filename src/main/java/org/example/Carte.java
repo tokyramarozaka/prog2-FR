@@ -23,9 +23,9 @@ public class Carte {
 
         for (Parc parc : this.parcs) {
             toutesLesEvaluations.addAll(parc.getEvaluations());
-            for (Hotel nearbyHotel : parc.getHotels()) {
-                toutesLesEvaluations.addAll(nearbyHotel.getEvaluations());
-                for (Chambre chambre : nearbyHotel.getChambres()) {
+            for (Hotel hotel : parc.getHotels()) {
+                toutesLesEvaluations.addAll(hotel.getEvaluations());
+                for (Chambre chambre : hotel.getChambres()) {
                     toutesLesEvaluations.addAll(chambre.getEvaluations());
                 }
             }
